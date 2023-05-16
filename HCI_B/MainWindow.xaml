@@ -1,0 +1,80 @@
+﻿<Window x:Class="HCI_B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_B"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title=" " Width="800" Height="600" ResizeMode="NoResize">
+
+
+
+    <Canvas Name="MyCanvas" KeyDown="CanvasKeyDown" Focusable="True" >
+
+        <Canvas.Background>
+            <ImageBrush ImageSource="C:/Users/Korisnik/source/repos/HCI_B/HCI_B/images/gard.jpg"/>
+        </Canvas.Background>
+
+        <Label FontSize="25" Name="txtScore" Foreground="White" Content="Score: 0" />
+        <Rectangle Name="jagodica" Width="40" Height="40" Fill="Pink" Canvas.Left="10" Canvas.Top="188" />
+        <Rectangle Name="monster" Tag="ghost" Width="30" Height="30" Fill="Black" Canvas.Left="516" Canvas.Top="248" />
+        <Rectangle Name="monster2" Tag="ghost" Width="30" Height="30" Fill="Black" Canvas.Left="143" Canvas.Top="400" RenderTransformOrigin="0.602,0.801" />
+        <Rectangle Name="monster3" Tag="ghost" Width="30" Height="30" Fill="Black" Canvas.Left="400" Canvas.Top="415" RenderTransformOrigin="0.602,0.801" />
+        <Rectangle Name="monster4" Tag="ghost" Width="30" Height="30" Fill="Black" Canvas.Left="302" Canvas.Top="47" RenderTransformOrigin="0.602,0.801" />
+
+
+        <Rectangle Name="jagoda" Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="204" Canvas.Top="134" />
+
+        <Rectangle Name="jagoda2"  Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="591" Canvas.Top="332" />
+
+
+        <Rectangle Name="jagoda3" Tag="coin"  Height="40" Width="40" Fill="Red" Canvas.Left="302" Canvas.Top="332" />
+
+
+        <Rectangle Name="jagoda4" Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="83" Canvas.Top="312" />
+
+
+        <Rectangle Name="jagoda5" Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="83" Canvas.Top="81" />
+
+        <Rectangle Name="jagoda6"  Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="632" Canvas.Top="488" />
+
+
+        <Rectangle Name="jagoda7" Tag="coin"  Height="40" Width="40" Fill="Red" Canvas.Left="265" Canvas.Top="488" />
+
+
+        <Rectangle Name="jagoda8" Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="687" Canvas.Top="134" />
+
+
+        <Rectangle Name="jagoda9" Tag="coin" Height="40" Width="40" Fill="Red" Canvas.Left="436" Canvas.Top="342" RenderTransformOrigin="4.722,2.778" />
+
+        <Rectangle Name="jagoda10" Tag="coin"  Height="40" Width="40" Fill="Red" Canvas.Left="436" Canvas.Top="81" />
+
+
+        <TextBlock x:Name="txtGameOver" FontWeight="Bold" Foreground="Black" Canvas.Left="229" Canvas.Top="217" FontSize="60"/>
+        <TextBlock x:Name="txtNext" FontWeight="Bold" Foreground="Black" Canvas.Left="108" Canvas.Top="237" FontSize="60"/>
+
+
+        <Button x:Name="btnSave" Click="btnSave_Click"  Background="White" BorderBrush="Red" FontSize="20" Canvas.Left="325" Canvas.Top="350" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden" Width="150" Height="65" Content="SAVE SCORE">
+            
+        </Button>
+        <Label x:Name="labelSaved" Content="" Canvas.Left="365" Foreground="DarkBlue" Canvas.Top="420" FontSize="20" Width="336"/>
+        <Button x:Name="btnRestart" Click="btnRestart_Click"  Background="White" BorderBrush="Red" FontSize="30" Canvas.Left="325" Canvas.Top="450" VerticalAlignment="Center" Width="150" Height="65" Visibility="Hidden" Content="RESTART"></Button>
+        <Button x:Name="btnNextLevel" Click="btnNextLevel_Click"  Background="White" BorderBrush="Red" FontSize="20" Canvas.Left="325" Canvas.Top="350" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden" Width="150" Height="65" Content="Next Level"/>
+        <Label x:Name="labelName" Content="Player name" Canvas.Left="233" Canvas.Top="223" FontSize="60" Width="336"/>
+        <TextBox x:Name="txtusername" Height="53" Canvas.Left="236" Canvas.Right="216" Canvas.Top="320" TextWrapping="Wrap" Width="326" FontSize="40"/>
+        <Button x:Name="btnStart" Content="Start" Canvas.Left="330" Canvas.Top="410" Height="60" Width="140" FontSize="40" Click="Button_Click"/>
+        <Button Content="Results" Height="27" Canvas.Left="721" Width="69" Background="#FF60AE80" Click="Button_Click_1"/>
+        <Button x:Name="end" Content="End" Height="27" Canvas.Left="721" Canvas.Top="30" Width="69" Background="#FF60AE80" Click="End_Click_1"/>
+        <Label FontSize="25" x:Name="txtLevel" Foreground="White" Content="Level: 1" Canvas.Left="-1" Canvas.Top="30" />
+
+
+
+
+    </Canvas>
+
+
+
+
+
+</Window>
